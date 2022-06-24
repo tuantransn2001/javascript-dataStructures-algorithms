@@ -1,5 +1,4 @@
 // ? ======================= JAVASCRIPT STRUCTURES AND ALGORITHMS =======================
-
 // * 1) ==== Stack
 const myStack = function () {
   this.count = 0;
@@ -113,44 +112,30 @@ const mySet = function () {
   };
 };
 
-// const setA = new mySet();
-// setA.add("a");
-// setA.add("b");
-// setA.add("c");
-// console.log("Set A: ", setA.value());
-// const setB = new mySet();
-// setB.add("b");
-// setB.add("c");
-// setB.add("d");
-// setB.add("e");
-// setB.add("f");
-// setB.add("j");
-// console.log("Set B: ", setB.value());
-// console.log("Intersaction(A-B)", setA.intersaction(setB));
-// console.log("Different(A-B)", setA.different(setB));
-// const setC = new mySet();
-// setC.add("z");
-// setC.add("x");
-// setC.add("c");
-// const setD = new mySet();
-// setD.add("x");
-// setD.add("y");
-// console.log("setC", setC.value());
-// console.log("setD", setD.value());
-// console.log("D isSubset of C", setC.subset(setD));
+const myQueue = function () {
+  const collection = [];
 
-const setE = new mySet();
-setE.add("a");
-setE.add("b");
-const setF = new mySet();
-setF.add("c");
-setF.add("b");
-setF.add("b");
-setF.add("b");
-setF.add("b");
-setF.add("b");
-setF.add("f");
+  this.print = function () {
+    console.log(colection);
+  };
 
-console.log("setE", setE.value());
-console.log("setF", setF.value());
-console.log("union[E - F]", setE.union(setF));
+  this.enqueue = function (value) {
+    collection.push(value);
+  };
+
+  this.decode = function () {
+    return colection.shift();
+  };
+
+  this.font = function () {
+    return colection[0];
+  };
+
+  this.size = function () {
+    return colection.length;
+  };
+
+  this.isEmpty = function () {
+    return colection.length === 0;
+  };
+};
